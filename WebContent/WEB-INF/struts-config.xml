@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+
+    <form-beans>
+    	<form-bean name="atlanticForm" type="br.com.AtlanticForm"/>
+    	<form-bean name="testeForm" type="br.com.TesteForm"/>
+    	<form-bean name="calculadoraForm" type="br.com.CalculadoraForm"/>
+    </form-beans>
+
+	<global-forwards>
+        
+    </global-forwards>
+
+    <action-mappings>
+        <action path="/atlantic" type="br.com.AtlanticAction" name="atlanticForm">
+        	<forward name="success" path="/sucesso.jsp" />
+        </action>
+        
+        <action path="/teste" type="br.com.TesteAction" name="testeForm">
+        	<forward name="teste1" path="/teste.jsp" />
+        </action>
+        
+        <action path="/calculadora" type="br.com.CalculadoraAction" name="calculadoraForm">
+        	<forward name="calculadora1" path="/calculadora.jsp" />
+        </action>
+    </action-mappings>
+
+</struts-config>
