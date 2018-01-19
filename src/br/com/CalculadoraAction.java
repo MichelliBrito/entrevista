@@ -17,7 +17,9 @@ public class CalculadoraAction extends Action{
 		double n1 = calculadoraForm.getNumero1();
 		double n2 = calculadoraForm.getNumero2();
 		
+
 		System.out.println("MUDOU AQUI!!!!!!");
+
 		
 		if(calculadoraForm.getOperacao().equals("somar")) {
 			System.out.println("entrou em somar");
